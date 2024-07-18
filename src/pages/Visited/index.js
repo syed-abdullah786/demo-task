@@ -15,7 +15,7 @@ const visitedCountries = useSelector((state) => state.visitedCountries);
   const sortVisitedCountries = () => {
     const sortedVisitedCountries = { ...visitedCountries };
     return Object.entries(sortedVisitedCountries).sort(
-      (a, b) => new Date(a[1]) - new Date(b[1])
+      (a, b) => new Date(b[1]) - new Date(a[1])
     );
   };
 
